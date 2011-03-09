@@ -1,3 +1,4 @@
+let mapleader = ","
 set nocompatible
 
 set number
@@ -27,6 +28,7 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,test/fixtures/*,vendor/gems/*
 
 " Status bar
 set laststatus=2
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 
 " Without setting this, ZoomWin restores windows in a way that causes
 " equalalways behavior to be triggered the next time CommandT is used.
